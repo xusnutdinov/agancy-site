@@ -154,6 +154,24 @@ h1, h2, h3, h4, h5, h6 {
 .button--orange:hover {
   background-color: #f3b400;
 }
+@media (max-width: 1199px) {
+  .button {
+    padding: 24px 64px;
+  }
+  .button--white {
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 991px) {
+  .button {
+    padding: 18px 58px;
+    font-size: 16px;
+  }
+  .button--white {
+    padding: 16px 36px;
+    font-size: 15px;
+  }
+}
 
 .section-title {
   font-size: 70px;
@@ -170,6 +188,25 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 6px;
   text-transform: uppercase;
   color: #6422db;
+}
+@media (max-width: 1199px) {
+  .section-title {
+    font-size: 60px;
+    line-height: 64px;
+  }
+  .section-title__top {
+    font-size: 25px;
+  }
+}
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 46px;
+    line-height: 51px;
+  }
+  .section-title__top {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
 }
 
 .section-text {
@@ -257,6 +294,15 @@ h1, h2, h3, h4, h5, h6 {
 .form__control:focus {
   border-color: rgba(106, 105, 127, 0.7);
 }
+@media (max-width: 991px) {
+  .form__group label {
+    font-size: 16px;
+  }
+  .form__control {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+}
 
 .header {
   position: absolute;
@@ -277,6 +323,15 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 991px) {
+  .header {
+    padding-top: 30px;
+  }
+  .header__logo {
+    margin-right: 50px;
+  }
+}
+
 .menu__list {
   display: flex;
   justify-content: space-between;
@@ -290,6 +345,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 19px;
   font-weight: 400;
   color: #ffffff;
+}
+@media (max-width: 991px) {
+  .menu__link {
+    font-size: 16px;
+  }
 }
 
 .hero {
@@ -312,6 +372,30 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 36px;
   color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 1199px) {
+  .hero {
+    padding: 250px 0;
+  }
+  .hero__title {
+    font-size: 67px;
+    line-height: 73px;
+  }
+}
+@media (max-width: 991px) {
+  .hero {
+    padding: 200px 0;
+  }
+  .hero__title {
+    font-size: 60px;
+    line-height: 55px;
+  }
+  .hero__subtitle {
+    margin-bottom: 33px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
 }
 
 .about {
@@ -348,12 +432,54 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 236px;
   padding-left: 46px;
 }
+@media (max-width: 1199px) {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+  .about::before {
+    width: 400px;
+    height: 400px;
+  }
+  .about__content {
+    padding-top: 60px;
+    padding-bottom: 180px;
+    padding-left: 34px;
+  }
+}
+@media (max-width: 991px) {
+  .about {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .about::before {
+    width: 300px;
+    height: 300px;
+    right: -100px;
+  }
+  .about__content {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 25px;
+  }
+  .about__img {
+    margin-left: -67px;
+    margin-right: 67px;
+  }
+}
 
 .services__title,
 .about__title,
 .contact__title {
   max-width: 543px;
   margin-bottom: 40px;
+}
+@media (max-width: 991px) {
+  .services__title,
+.about__title,
+.contact__title {
+    margin-bottom: 16px;
+  }
 }
 
 .services__text,
@@ -387,6 +513,34 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -120px;
   margin-bottom: 120px;
 }
+@media (max-width: 1199px) {
+  .services {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  .services__right {
+    padding: 0 10px;
+  }
+  .services__cards {
+    grid-gap: 28px;
+  }
+}
+@media (max-width: 991px) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  .services__inner {
+    flex-direction: column;
+  }
+  .services__right {
+    padding: 0 10px;
+  }
+  .services__cards {
+    padding-top: 100px;
+    grid-gap: 28px;
+  }
+}
 
 .card {
   padding: 55px 30px;
@@ -413,6 +567,28 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 32px;
   color: rgba(37, 35, 77, 0.81);
 }
+@media (max-width: 1199px) {
+  .card {
+    padding: 40px 25px;
+  }
+}
+@media (max-width: 1199px) {
+  .card {
+    padding: 30px 20px;
+  }
+  .card__image {
+    max-width: 58px;
+    margin-bottom: 16px;
+  }
+  .card__title {
+    margin-bottom: 15px;
+    font-size: 19px;
+  }
+  .card__text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
 
 .testimonials {
   position: relative;
@@ -438,6 +614,18 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("../img/testimonials-oval.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 1199px) {
+  .testimonials {
+    padding-top: 150px;
+    padding-bottom: 240px;
+  }
+}
+@media (max-width: 991px) {
+  .testimonials {
+    padding-top: 78px;
+    padding-bottom: 160px;
+  }
 }
 
 .slider {
@@ -522,7 +710,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(-50%);
 }
 .slider__btn {
-  /* Style for "Ellipse 4" */
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -551,6 +738,34 @@ h1, h2, h3, h4, h5, h6 {
   color: #edf0fd;
   transform: translateX(-50%);
 }
+@media (max-width: 1199px) {
+  .slider__item {
+    padding: 60px 70px 90px;
+  }
+}
+@media (max-width: 991px) {
+  .slider__text {
+    margin-bottom: 19px;
+    font-size: 20px;
+  }
+  .slider__name {
+    font-size: 20px;
+    margin-bottom: 9px;
+  }
+  .slider__rating {
+    font-size: 17px;
+  }
+  .slider__item {
+    padding: 45px 50px 75px;
+  }
+  .slider__btn {
+    width: 36px;
+    height: 36px;
+  }
+  .slider__qoute {
+    font-size: 120px;
+  }
+}
 
 .contact {
   padding: 90px 0 120px;
@@ -571,6 +786,16 @@ h1, h2, h3, h4, h5, h6 {
 .contact__form {
   padding: 100px 40px;
 }
+@media (max-width: 1199px) {
+  .contact__form {
+    padding: 80px 35px;
+  }
+}
+@media (max-width: 991px) {
+  .contact__form {
+    padding: 60px 15px;
+  }
+}
 
 .footer {
   padding-top: 200px;
@@ -586,4 +811,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer__copy {
   text-align: center;
+}
+@media (max-width: 1199px) {
+  .footer {
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  .footer__content {
+    margin-bottom: 30px;
+  }
 }

@@ -634,8 +634,10 @@ h1, h2, h3, h4, h5, h6 {
 .slider__inner {
   max-width: 730px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .slider__item-wrapper {
+  display: flex;
   position: relative;
 }
 .slider__item-wrapper::after {
@@ -668,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
 .slider__item {
   position: relative;
   z-index: 4;
-  max-width: 730px;
+  flex: 0 0 100%;
   margin: 0 auto;
   padding: 70px 80px 105px;
   background-color: #ffffff;
